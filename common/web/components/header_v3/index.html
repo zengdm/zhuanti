@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://assets.diandong.com/web/css/base.min_v2.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="http://assets.diandong.com/web/js/common.min_v2.js"></script>
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <div class="wrap">
+            <div id="logo" class="logo fn-left"><a href="http://www.diandong.com/">电动邦</a></div>
+            <div id="slogan" class="slogan fn-left"><em>买电动车 上电动邦</em></div>
+            <div id="city-holder" class="city-holder fn-left">
+                <div class="current-city"><i class="icon">&#xe659;</i>
+                    <a href="http://www.diandong.com/city/"></a>
+                </div>
+            </div>
+            <div id="user-holder" class="user-holder fn-right">
+                <div class="user-panel">
+                    <div class="user-panel-avatar"></div>
+                    <a href="http://passport.diandong.com/ark/login">登录</a>
+                    <a href="http://passport.diandong.com/ark/register/">注册</a>
+                </div>
+            </div>
+            <div id="search-holder" class="search-holder fn-right">
+                <div class="search-wrapper" id="search-wrapper">
+                    <div class="search-bar">
+                        <input type="text" class="search-input" value="" placeholder="">
+                        <a class="search-submit-btn" href="javascript:;"><i class="icon">&#xe60a;</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        seajs.use(['./header'], function(Header) {
+            var header = new Header();
+        });
+    </script>
+
+</body>
+
+</html>

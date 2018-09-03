@@ -1,0 +1,125 @@
+.dd-global-topbar {
+    width: 100%;
+    min-width: 1200px;
+    border-bottom: 1px solid #edecec;
+    box-shadow: 1px 0 2px rgba(9,3,5,0.1);
+}
+.dd-global-topbar .wrap {
+    height: 38px;
+}
+.topbar-login {
+    width: 140px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+}
+.topbar-login a {
+    float: left;
+    width: 70px;
+    height: 38px;
+    color: #8f9498;
+}
+.topbar-login a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #282c30;
+}
+.topbar-user {
+    height: 38px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 38px;
+    font-size: 0;
+}
+.topbar-user-name, .topbar-logout-btn {
+    display: inline-block;
+    font-size: 14px;
+}
+.topbar-order {
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    text-align: center;
+    border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+}
+.topbar-order a {
+    color: #8f9498;
+}
+.topbar-order a:hover {
+    color: #3595e6;
+}
+.topbar-mobile {
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    text-align: center;
+    border-left: 1px solid #d2d2d2;
+    color: #8f9498;
+    position: relative;
+    cursor: pointer;
+}
+.topbar-mobile:hover span {
+    color: #3595e6;
+}
+.mobile-code {
+    width: 108px;
+    height: 115px;
+    background-color: white;
+    border: 1px solid #edecec;
+    border-top-width: 0;
+    position: absolute;
+    top: 39px;
+    left: -15px;
+    padding-top: 14px;
+    z-index: 600;
+    overflow: hidden;
+}
+.mobile-code p {
+    font-size: 12px;
+    line-height: 26px;
+}
+.mobile-code-detail {
+    width: 86px;
+    height: 86px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    background-image: url(http://assets.diandong.com/web/images/common/top_code.jpg);
+    background-repeat: no-repeat;
+}
+.mobile-code-detail p {
+    line-height: 22px;
+    height: 22px;
+    text-align: center;
+    font-size: 14px;
+    color: #8f9498;
+}
+.topbar-user-name {
+    color: #3595e6;
+    padding: 0 15px;
+}
+.topbar-user-name:hover {
+    color: #197acc;
+}
+.topbar-logout-btn {
+    padding: 0 15px;
+    color: #8f9498;
+}
+.topbar-city {
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    float: right;
+    font-size: 14px;
+    text-align: center;
+    color: #8f9498
+}
+.topbar-city a {
+    color: #3595e6;
+}
+.topbar-city a:hover {
+    color: #197acc;
+}

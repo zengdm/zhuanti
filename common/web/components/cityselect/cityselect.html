@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <title>选择城市</title>
+    <meta name="applicable-device" content="pc">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="/assets/web/css/base.min.css">
+    <script src="/assets/web/js/common.min.js"></script>
+</head>
+
+<body>
+
+    <select id="province" name="">
+        <option value="">选择省份</option>
+    </select>
+
+    <select id="city" name="">
+        <option value="">选择城市</option>
+    </select>
+
+    <script>
+        // seajs.use(['./cityselect'], function(cityselect) {
+        //     cityselect = new cityselect({
+        //         elements: {
+        //             province: $('#province'),
+        //             city: $('#city')
+        //         }
+        //     });
+        //
+        //     cityselect.initCity(0, 0);
+        // });
+        seajs.use(['cityselect'], function(cityselect) {
+            cityselect = new cityselect({
+                elements: {
+                    province: $('#province'),
+                    city: $('#city')
+                }
+            });
+
+            cityselect.initCity(0, 0);
+        });
+    </script>
+
+</body>
+
+</html>

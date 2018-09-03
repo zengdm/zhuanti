@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/web/css/base.min.css">
+    <script src="/assets/web/js/common.min_v2.js"></script>
+</head>
+<body>
+    <button id="btn">点我</button>
+    <script>
+        seajs.use(['./selectseries'], function(Selectseries) {
+            var selectseries = new Selectseries();
+
+            selectseries.selected(function(series, seriesName){
+                console.log(series);
+                console.log(seriesName);
+            });
+
+            $('#btn').on('click', function(){
+                selectseries.show(30, '北汽新能源');
+            });
+
+        });
+    </script>
+</body>
+</html>

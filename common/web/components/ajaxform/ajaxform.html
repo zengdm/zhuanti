@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <title>异步post</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="http://assets.diandong.com/mobile/css/base.min.css">
+    <script src="http://assets.diandong.com/mobile/js/common.min.js"></script>
+</head>
+<body>
+    <form action="" id="form">
+        <input type="hidden" name="uuid" value="test-0001">
+        <input type="hidden" name="iframeCross" value="1">
+        <p><textarea name="content"></textarea></p>
+        <p><button id="submit">提交</button></p>
+    </form>
+    <p>
+        返回json: <span id="json"></span>
+    </p>
+    <script>
+        seajs.use(['/assets/mobile/components/ajaxform/ajaxform'], function(AjaxForm) {
+            
+            $('#submit').on('click', function(e){
+                e.preventDefault();
+
+                new AjaxForm({
+                    url: 'http://testcomment.diandong.com/comment/post',
+                    data: $('#form').serialize(),
+                    success: function (res) {
+                        $('#json').html(JSON.stringify(res));
+                    }
+                });
+            });
+            
+            
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+.car-banner{
+	position: relative;
+}
+.car-banner{
+	position: relative;
+
+}
+.car-banner>div{
+	position: absolute;
+	top: 24.5%;
+	left: 50%;
+	margin-left: -1.6rem;
+}
+.car-tel{
+  background: none!important;
+}
+.car-banner>div>img{
+	width: 3.2rem;
+	height:3.2rem;
+}
+.car-bargain div{
+	width: 9.2rem;
+	font-size: 0;
+	margin: 0 auto;
+}
+.car-bargain div>input{
+}
+.car-bargain input{
+	width: 9.2rem;
+	height: 1.173333rem;
+	line-height: 1.173333rem;
+	padding: 0 0.2rem;
+	outline: none;
+	border: 0.013333rem solid #cdcdcd;
+	border-radius: 0.106667rem;
+	font-size: 0.426667rem;
+	background: none;
+	overflow: hidden;
+	margin-top: 0.5rem;
+}
+
+input[type='tel'] {
+    -webkit-appearance: none;
+}
+.car-bargain .car-write-verify{
+	width: 6.933333rem;
+	padding-right: 0.4rem;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right: 0;
+}
+.car-get-verify{
+	width: 2.266667rem;
+	height: 1.173333rem;
+	text-align: center;
+	line-height: 1.173333rem;
+	border-radius: 0.106667rem;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	background: #85b646;
+	font-size: 0.426667rem;
+	color: #fff;
+	outline: none;
+	border: none;
+}
+.car-get-verify.car-geted-verfiy{
+	background: #ccc!important;
+}
+.car-baming{
+	background: #85b646;
+	border: none;
+	outline: none;
+	width: 9.2rem;
+	height: 1.173333rem;
+	line-height: 1.173333rem;
+	margin: 5.2% 0 0 0;
+	border-radius: 0.3rem;
+	color: #fff;
+	font-size: 0.426667rem;
+}
+.car-bargain>div>img{
+	margin: 15.3rem 0 1rem 1rem;
+	width: 12.72rem;
+	height: 2.34rem;
+}
+
+.car-title{
+	padding-top: 0.426667rem;
+	margin: 0.466667rem 0.4rem 0.266667rem 0.466667rem;
+	border-top: 1px solid #e6e6e6;
+	font-size: 0.453333rem;
+	color: #333;
+	font-weight: bold;
+}
+
+/*意向车型*/
+.car-expect{
+	position: relative;;
+	z-index: 10;
+	/*margin-top: 0.266667rem;*/
+	/*padding-bottom: 40px;*/
+}
+.car-bbg-sz{
+	width: 8.133333rem;
+	margin-left: 0.466667rem;
+	font-size: 0.346667rem;
+	color: #6e6e6e;
+}
+/*活动流程*/
+.car-active img{
+	width: 9.2rem;
+	height: 8.733333rem;
+}
+.car-timer{
+	width: 9.2rem;
+	height: 2.373333rem;
+	margin: 0 auto;
+	padding-top: 0.2rem;
+	text-align: center;
+	line-height: 0.853333rem;
+	border: 0.08rem solid #f1201c;
+	border-radius: 0.266667rem;
+	font-size: 0.56rem;
+	color: #333;
+	font-weight: bold;
+}
+.car-timer>span{
+	display: block;
+	color: #e20b10;
+}
+/*轮播图*/
+.car-light,.car-rule{
+	margin-top: 0.5rem;
+}
+.car-light{
+	width: 10rem;
+	margin: 0 auto;
+}
+.swiper-container{
+	/*position: relative;*/
+	width: 10rem;
+	/*height: 4.173333rem;*/
+	overflow: hidden;
+	margin: 0 auto;
+}
+.pagination {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.24rem;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+  border-radius: 100%;
+  background: #ccc;
+  margin: 0 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-visible-switch, .swiper-active-switch{
+	background: #85b646;
+}
+.swiper-container>ul>li{
+	float: left;
+}
+.swiper-container .swiper-wrapper{
+	width: 10rem;
+	height: 4.2rem!important;
+	overflow: hidden;
+}
+.swiper-container>ul>li>a>img{
+	width: 10rem;
+	height: 4.2rem;
+}
+/*产品规则*/
+.active-con-rule{
+	padding: 0.133333rem 0.4rem 0.4rem 0.4rem;
+	line-height: 0.8rem;
+	font-size: 0.373333rem;
+	color: #333;
+}
+.active-con-rule i{
+	font-weight: bold;
+	font-style: normal;
+	color: #fd342d;
+}
+.active-con-rule span{
+	color: #000;
+	font-weight: bold;
+}

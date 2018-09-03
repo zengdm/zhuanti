@@ -1,0 +1,281 @@
+.widget-signup {
+  position: absolute;
+  width: 700px;
+  left: 50%;
+  margin-left: -350px;
+  background-color: #fff;
+  z-index: 500;
+}
+.widget-signup h3 {
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  color: #ced8e2;
+  padding-left: 24px;
+  background-color: #282c30;
+  border-bottom: 3px #3595e6 solid;
+}
+.widget-signup-form {
+  margin: 15px 40px 30px;
+  color: #a6b1bc;
+  font-size: 16px;
+}
+.widget-signup-close {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  right: 0;
+  top: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #3595e6 url(http://assets.diandong.com/web/images/app/mall/public/public_sprite.png) no-repeat -65px -5px;
+}
+.widget-signup-required {
+  color: #f00d0d;
+  vertical-align: top;
+}
+.widget-signup-selectcar {
+  border-bottom: 1px #e5e5e5 solid;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+.widget-signup-selectcar dd {
+  margin-top: 18px;
+}
+.widget-signup-selectcar select,
+.widget-signup-citybox select {
+  width: 170px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #888;
+  border: 1px #e5e5e5 solid;
+  margin-right: 10px;
+}
+.widget-signup-citybox select {
+  width: 163px;
+}
+.widget-signup-table {
+  width: 600px;
+  margin: 10px auto 0 25px;
+}
+.widget-signup-table td {
+  height: 60px;
+  line-height: 60px;
+}
+.widget-signup-ltd {
+  width: 100px;
+  text-align: right;
+}
+.widget-signup-rtd {
+  padding-left: 20px;
+}
+.widget-signup-rtd label {
+  position: relative;
+  margin-left: 5px;
+  color: #d52727;
+}
+.widget-signup-rtd label i {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  color: #d52727;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+.widget-signup-rtd input[type="checkbox"] {
+  margin-left: 15px;
+}
+.widget-signup-text {
+  width: 324px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  border: 1px #e5e5e5 solid;
+  color: #888;
+}
+.widget-signup-submit {
+  text-align: center;
+  margin-top: 10px;
+}
+.widget-signup-submitbtn {
+  width: 152px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #3595e6;
+}
+.widget-signup-submitbtn:hover {
+  background-color: #197acc;
+}
+.widget-signup-datebox {
+  display: inline-block;
+  position: relative;
+  width: 144px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px #e5e5e5 solid;
+}
+.widget-signup-datebox input {
+  width: 132px;
+  height: 28px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  color: #888;
+}
+::-webkit-input-placeholder {
+  color: #d9d9d9;
+}
+:-moz-placeholder {
+  color: #d9d9d9;
+}
+.widget-signup-hour {
+  width: 60px;
+  height: 32px;
+  line-height: 32px;
+  color: #888;
+  border: 1px #e5e5e5 solid;
+  margin-left: 12px;
+  margin-right: 10px;
+}
+.widget-signup-date-icon {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 21px;
+  height: 21px;
+  pointer-events: none;
+  background: url(http://assets.diandong.com/web/images/app/mall/public/public_sprite.png) -20px -20px no-repeat;
+}
+.widget-signup-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 200;
+  background-color: #000;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+.widget-signup-success-center {
+  margin: 70px 60px 30px 140px;
+}
+.widget-signup-successicon {
+  float: left;
+  width: 74px;
+  height: 61px;
+  margin-top: 20px;
+  background: url(http://assets.diandong.com/web/images/app/mall/public/public_sprite.png) no-repeat -139px -20px;
+}
+.widget-signup-successwords {
+  float: left;
+  margin-left: 20px;
+  color: #a6b1bc;
+  font-size: 16px;
+}
+.widget-signup-successwords span,
+.widget-signup-errorwords span {
+  color: #3595e6;
+}
+.widget-signup-congratulations {
+  font-size: 24px;
+  color: #30b853;
+  margin-bottom: 5px;
+}
+.widget-signup-error-center {
+  margin: 80px 60px 30px 90px;
+}
+.widget-signup-erroricon {
+  float: left;
+  width: 74px;
+  height: 61px;
+  margin-top: 5px;
+  background: url(http://assets.diandong.com/web/images/app/mall/public/public_sprite.png) no-repeat -253px -20px;
+}
+.widget-signup-errorwords {
+  float: left;
+  margin-left: 20px;
+  color: #a6b1bc;
+  font-size: 16px;
+}
+.widget-signup-fail {
+  font-size: 24px;
+  color: #e93131;
+  margin-bottom: 2px;
+}
+.signup_car_words {
+  font-size: 12px;
+  color: #f00d0d;
+}
+.widget-signup-select-jxs {
+  width: 336px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #888;
+  border: 1px #e5e5e5 solid;
+}
+
+.con-sale-remind{
+  width: 518px;
+  height: 262px;
+}
+
+.con-sale-remind .con-remind-close{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  top: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background:#3595e6 url(http://assets.diandong.com/web/images/app/mall/public/public_sprite.png) no-repeat -65px -5px;
+}
+.con-remind-center{
+  margin: 88px 0 42px;
+  
+  text-align: center;
+  margin-right: 40px;
+}
+.con-remind-center i{
+  display: inline-block;
+  width: 74px;
+  height: 61px;
+  vertical-align: middle;
+  background: url(http://assets.diandong.com/web/images/app/mall/public/public_sprite.png) no-repeat -139px -20px;
+}
+.con-remind-center span{
+  margin-left: 25px;
+  color: #30b853;
+  font-size: 24px;
+  vertical-align: middle;
+}
+.con-remind-ensurebox{
+  text-align: center;
+}
+.con-remind-ensure{
+  display: inline-block;
+  width: 152px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #3595e6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+

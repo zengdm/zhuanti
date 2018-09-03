@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/web/css/base.min.css">
+    <script src="/assets/web/js/common.min_v2.js"></script>
+</head>
+<body>
+    <button id="btn">点我</button>
+    <script>
+        seajs.use(['./selectcity'], function(Selectcity) {
+            var selectcity = new Selectcity();
+
+            selectcity.selected(function(id, name){
+                console.log(id);
+                console.log(name);
+            });
+
+            $('#btn').on('click', function(){
+                selectcity.show();
+            });
+
+        });
+    </script>
+</body>
+</html>

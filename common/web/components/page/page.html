@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <title>toolbar</title>
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="/assets/web/css/base.min.css">
+    <script src="/assets/web/js/common.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+        seajs.use(['./page'], function(page) {
+            page.init({
+                topbar: false,
+                header: false,
+                nav: false,
+                toolbar: false
+            });
+        });
+        // seajs.use(['page'], function(page) {
+        //     page.init({
+        //         topbar: false,
+        //         header: false,
+        //         nav: false,
+        //         toolbar: false
+        //     });
+        // });
+    </script>
+
+</body>
+
+</html>

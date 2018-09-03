@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <title>topbar</title>
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta name="renderer" content="webkit">
+    <!-- <link rel="stylesheet" href="/assets/web/css/base.min.css"> -->
+    <link rel="stylesheet" href="/assets/web/css/normal/normal.css">
+    <link rel="stylesheet" href="topbar.css">
+    <script src="/assets/web/js/common.min.js"></script>
+</head>
+
+<body>
+
+    <div id='dd-global-topbar' class="dd-global-topbar">
+        <div class="wrap">
+            <div class="topbar-login fn-right">
+                <a href="http://passport.diandong.com/ark/login/">登陆</a>
+                <a href="http://passport.diandong.com/ark/register/">注册</a>
+            </div>
+            <div class="topbar-user fn-right fn-hide"></div>
+            <div class="topbar-order fn-right">
+                <a href="http://passport.diandong.com/ark/login/">我的订单</a>
+            </div>
+            <div class="topbar-mobile j-show-code fn-right">
+                <span>手机版</span>
+                <div class="mobile-code fn-hide">
+                    <div class="mobile-code-detail"></div>
+                    <p>扫一扫进入</p>
+                </div>
+            </div>
+            <div class="topbar-city fn-right">
+                <span class="topbar-city-btn"></span>
+                <a href="http://www.diandong.com/city/">切换</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        seajs.use(['./topbar'], function(topbar) {
+            topbar.init();
+        });
+        // seajs.use(['topbar'], function(topbar) {
+        //     topbar.init();
+        // });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+body,html{
+	background: #f2f2f2;
+}
+.car-banner{
+	position: relative;
+
+}
+.car-banner>div{
+	position: absolute;
+	top: 49%;
+	left: 50%;
+	margin-left: -95px;
+}
+.car-banner>div>img{
+	width: 190px;
+	height: 190px;
+}
+@media screen and (max-width: 1850px) {
+	.car-banner>div{
+		margin-left: -80px;
+	}
+	.car-banner>div>img{
+		width: 160px;
+		height: 160px;
+	}
+}
+@media screen and (max-width: 1600px) {
+	.car-banner>div{
+		margin-left: -70px;
+	}
+	.car-banner>div>img{
+		width: 140px;
+		height: 140px;
+	}
+}
+@media screen and (max-width: 1400px) {
+	.car-banner>div{
+		margin-left: -60px;
+	}
+	.car-banner>div>img{
+		width: 120px;
+		height: 120px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.car-banner>div{
+		margin-left: -55px;
+	}
+	.car-banner>div>img{
+		width: 110px;
+		height: 110px;
+	}
+}
+.car-get-verify.car-geted-verfiy{
+	background: #ccc!important;
+	cursor: default!important;
+}
+.car-get-submitBefore{
+	background: #1aac19!important;
+	cursor: pointer;
+}
+.car-block{
+	width: 1120px;
+	background: #fff;
+	border-radius: 10px;
+	margin: 20px auto;
+	padding: 25px 40px 0 40px;
+}
+.car-title{
+	padding-bottom: 15px;
+	font-size: 30px;
+	color: #333;
+	font-weight: bold;
+}
+
+/*意向车型报名*/
+
+.car-expect{
+	position: relative;;
+	z-index: 10;
+	margin-top: -50px;
+	padding-bottom: 40px;
+}
+.car-bbg-sz{
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	font-size: 14px;
+	color: #999;
+	border-bottom: 1px solid #e6e6e6;
+}
+.car-bargain{
+	position: relative;
+}
+.car-bargain>form>div .car-type{
+	width: 668px;
+	margin-bottom: 20px;
+}
+.car-bargain>form>div{
+	font-size: 0;
+}
+.car-bargain input{
+	padding: 0 15px;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	vertical-align: middle;
+	overflow: hidden;
+	font-size: 16px;
+	outline: none;
+}
+.car-bargain>form>div>input{
+	width: 168px;
+	margin-right: 20px;
+}
+.car-bargain .car-write-verify{
+	width: 121px;
+	border-right: none;
+	vertical-align: middle;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.car-bargain .car-get-verify{
+	width: 108px;
+	height: 40px;
+	line-height: 40px;
+	background: #1aac19;
+	outline: none;
+	border: none;
+	font-size: 14px;
+	color: #fff;
+	vertical-align: middle;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+}
+.car-bargain .car-baming{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	background: #d1eed0;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	font-size: 18px;
+	color: #fff;
+}
+/*活动流程*/
+.car-active>div:first-of-type{
+	border-bottom: 1px solid #e6e6e6;
+}
+.car-active p{
+	font-size: 24px;
+	font-weight: bold;
+}
+.car-active span{
+	color: #f60913;
+	margin-left: 10px;
+}
+/*轮播图*/
+.car-light{
+	width: 1200px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.car-config{
+	padding-right: 30px;
+}
+.car-config>a{
+	font-size: 16px;
+	color: #333;
+}
+.car-light h1{
+	padding-left: 40px;
+}
+.swiper-container{
+	position: relative;
+	width: 1200px;
+	height: 506px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.swiper-container p{
+	width: 1200px;
+	height: 506px;
+	background: #000;
+}
+.swiper-container>ul>li{
+	float: left;
+}
+.swiper-container>ul>li>a>img{
+	width: 1200px;
+	height: 506px;
+}
+.swiper-btn-prev,.swiper-btn-next{
+	position: absolute;
+	z-index: 999;
+	top: 50%;
+	margin-top: -39px;
+	width: 58px;
+	height: 77px;
+	background: url('http://assets.diandong.com/web/zt/handlingbike_v2/images/left.png') no-repeat;
+	cursor: pointer;
+}
+.swiper-btn-next{
+	right: 0;
+	background: url('http://assets.diandong.com/web/zt/handlingbike_v2/images/right.png') no-repeat;
+}
+/*产品规则*/
+.active-con-rule{
+	padding-top: 10px;
+	padding-bottom: 30px;
+	border-top: 1px solid #e6e6e6;
+	line-height: 30px;
+	font-size: 16px;
+	color: #333;
+}
+.active-con-rule i{
+	font-weight: bold;
+	font-style: normal;
+	color: #fd342d;
+}
+.active-con-rule span{
+	color: #000;
+	font-weight: bold;
+}
+
+.QRcode{
+    display: none;
+}
+.ddwxQRcode {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    /*margin-top: -203px;*/
+    margin-top: -160px;
+    z-index: 10;
+}
+.ddwxQRcode:hover .ddwxQRcodeimg{
+    left: 0;
+    cursor: pointer;
+}
+.ddwxQRcodegif{
+    width: 60px;
+    height: 72px;
+}
+.ddwxQRcodetxt {
+    font-size: 14px;
+    writing-mode: vertical-lr;
+    color: #3494ea;
+    /* padding-left: 4px; */
+    letter-spacing: 2px;
+    width: 20px;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.5);
+    /* padding-right: 4px; */
+    padding: 4px;
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+.ddwxQRcodetxt em {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 13px solid #3494ea;
+}
+.ddwxQRcodeimg {
+    position: relative;
+    left: -53px;
+    top: -20px;
+}
+
+.car-list table{
+	margin-left:40px;
+	height: 568px;
+}
+
+.car-list thead{
+	height: 40px;
+	background: #f2f2f2;
+	font-size: 14px;
+	color: #999;
+	font-weight: initial;
+}
+.car-list th{
+	text-align: center;
+	padding: 12px 0;
+}
+.car-list  td{
+	padding: 8px 44px;
+	color: #333;
+	/*text-align: center;*/
+}
+.car-list tbody tr:first-child td{
+	padding-top: 16px;
+}
+.car-list .car-list-first{
+	color: #fe0000;
+}
+
+.car-list .car-list-middle{
+	color: #ff6633;
+}
+
+.car-list .car-list-usually{
+	color: #333333;
+}
+
+.car-list-avatar{
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.car-list-cell{
+	color: #85b646;
+}
+.car-list-cell img{
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+.car-list-prize img{
+	width: 140px;
+	height: 24px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.car-list-page{
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 30px
+}
+.car-list-page-img{
+	/*width: 10px;
+	height: 10px;*/
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 10px;
+}
+.car-list-page-img i{
+	font-size: 14px;
+	color: #85b646;;
+}
+.car-list-page-img .tint{
+	color: #e7f0da;
+}
+.car-list-page-num{
+	color: #333;
+	width: 42px;
+	height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 6px;
+	cursor: pointer;
+
+	
+}
+.page-bg{
+	background: #85b646;
+	color: #fff;
+}
+tbody>tr>td:nth-of-type(1){
+	text-align: center;
+}
+
+table {
+	font-size: 16px;
+    display: table-row;
+    vertical-align: top;
+}
+
+.car-list-prize{
+	width: 142px;
+	text-align: center;
+}
+table tr td:nth-of-type(2) span{
+	display: inline-block;;
+	width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+

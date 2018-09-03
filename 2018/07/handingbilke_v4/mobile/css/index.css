@@ -1,0 +1,96 @@
+.body-bg{
+	background: #000;
+}
+.banner{
+	position: relative;
+}
+.banner-img{
+	width: 16rem;
+	/*height: 37.21rem;*/
+}
+.banner>div{
+	position: absolute;
+	top: 25.1%;
+	left: 50%;
+	margin-left: -2.5rem;
+}
+.banner>div>img{
+	width: 4.91rem;
+	height: 4.91rem;
+}
+.flow,.rule{
+	width: 16rem;
+	padding: 0 0.64rem;
+	box-sizing:border-box;
+}
+.flow-title,.rule-title{
+	/*border-top: 1px solid #90ff00;*/
+	height: 2.65rem;
+	line-height: 2.65rem;
+	color: #fff;
+	font-size: 0.98rem;
+	/*font-weight: 600*/
+}
+.flow-timer{
+	width: 100%;
+	height: 3.58rem;
+	border: 0.14rem solid #90ff00;
+	border-radius: 0.24rem;
+	text-align: center;
+	font-size: 0.85rem;
+	padding-top: 0.48rem;
+	box-sizing:border-box;
+	/*font-weight: 600*/
+}
+.flow-timer p{
+	color: #fff;
+	line-height: 1.32rem;
+}
+.flow-timer span{
+	color: #90ff00;
+}
+.flow-img{
+	width: 100%;
+	margin:0.64rem 0;
+}
+.flow-img img{
+	width: 100%;
+}
+
+.rule-title{
+	height: 2.3rem;
+	border: none;
+	margin-top: 0.6rem;
+}
+.rule-line{
+	width: 7.06rem;
+}
+.rule-detail{
+	color: #cccdc8;
+	font-size: 0.6rem;
+	padding: 0.3rem 0 0.9rem 0;
+	box-sizing:border-box;
+	border-bottom: 1px solid #90ff00;
+}
+.rule-detail p{
+	line-height: 1.07rem;
+}
+.rule-detail i{
+	font-weight: bold;
+    font-style: normal;
+    color: #fff;
+}
+.rule-detail span{
+	font-weight: 600;
+	color: #fff;
+}
+.footer{
+	height: 2.86rem;
+	line-height: 2.86rem;
+	text-align: center;
+	/*width: */
+}
+.footer img{
+	width: 6.68rem;
+	height: 0.66rem;
+}

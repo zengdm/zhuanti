@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <title>dialog</title>
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="/assets/web/css/base.min.css">
+    <script src="/assets/web/js/common.min.js"></script>
+</head>
+
+<body>
+
+    <style>
+        .btn {
+            position: relative;
+            display: block;
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 20px;
+            color: #333;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #eee;
+            background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+            background-image: linear-gradient(#fcfcfc, #eee);
+            border: 1px solid #d5d5d5;
+            border-radius: 3px;
+        }
+
+        .btn:hover {
+            text-decoration: none;
+            background-color: #ddd;
+            background-image: -webkit-linear-gradient(#eee, #ddd);
+            background-image: linear-gradient(#eee, #ddd);
+            border-color: #ccc;
+            color: #333;
+        }
+
+        .example-btns {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 9999;
+        }
+
+        .example-btns li {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .example-btns .btn {
+            text-align: center;
+            height: 20px;
+            float: right;
+        }
+    </style>
+
+    <aside class="example-btns">
+        <ul>
+            <li><a href="javascript:;" class="btn show-dialog-btn j-show-dialog">show dialog</a></li>
+            <li><a href="javascript:;" class="btn hide-dialog-btn j-hide-dialog">hide dialog</a></li>
+            <li><a href="javascript:;" class="btn show-dialog-btn j-show-dialog-2">show another dialog</a></li>
+            <li><a href="javascript:;" class="btn hide-dialog-btn j-hide-dialog-2">hide dialog with callback</a></li>
+        </ul>
+    </aside>
+
+    <script>
+        seajs.use(['./dialog'], function(dialog) {
+
+            $('.j-show-dialog').on('click', function() {
+                dialog.show('mycontent', {
+                    width: '800px',
+                    height: '300px',
+                    title: '标题',
+                    className: 'myclass',
+                    onShow: function() {
+                        console.log('show');
+                    }
+                });
+            });
+
+            $('.j-show-dialog-2').on('click', function() {
+                dialog.show('mycontent2', {
+                    width: '600px',
+                    title: '标题2',
+                    className: 'myclass2'
+                });
+            });
+
+            $('.j-hide-dialog').on('click', function() {
+                dialog.hide();
+            });
+
+            $('.j-hide-dialog-2').on('click', function() {
+                dialog.hide(function() {
+                    console.log('hide');
+                });
+            });
+        });
+
+        // seajs.use(['dialog'], function(dialog) {
+        //
+        //     $('.j-show-dialog').on('click', function() {
+        //         dialog.show('mycontent', {
+        //             width: '800px',
+        //             height: '300px',
+        //             title: '标题',
+        //             className: 'myclass'
+        //         });
+        //     });
+        //
+        //     $('.j-show-dialog-2').on('click', function() {
+        //         dialog.show('mycontent2', {
+        //             width: '600px',
+        //             title: '标题2',
+        //             className: 'myclass2'
+        //         });
+        //     });
+        //
+        //     $('.j-hide-dialog').on('click', function() {
+        //         dialog.hide();
+        //     });
+        //
+        //     $('.j-hide-dialog-2').on('click', function() {
+        //         dialog.hide(function() {
+        //             console.log('hide');
+        //         });
+        //     });
+        // });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <title>carselect</title>
+    <meta name="applicable-device" content="pc">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="/assets/web/css/base.min.css">
+    <script src="/assets/web/js/common.min.js"></script>
+</head>
+
+<body>
+
+    <select name="brand" id="brand">
+        <option>品牌</option>
+    </select>
+
+    <select name="series" id="series">
+        <option>车型</option>
+    </select>
+
+    <select name="model" id="model">
+        <option>配置</option>
+    </select>
+
+    <script>
+        seajs.use(['./carselect'], function(Carselect) {
+
+            carselect = new Carselect({
+                elements: {
+                    brand: $('#brand'),
+                    series: $('#series'),
+                    model: $('#model')
+                },
+                nomarket: false
+            });
+
+            carselect.initCar(0, 0, 0);
+        });
+
+        // seajs.use(['carselect'], function(Carselect) {
+        //
+        //     carselect = new Carselect({
+        //         elements: {
+        //             brand: $('#brand'),
+        //             series: $('#series'),
+        //             model: $('#model')
+        //         },
+        //         nomarket: false
+        //     });
+        //
+        //     carselect.initCar(0, 0, 0);
+        // });
+    </script>
+
+</body>
+
+</html>

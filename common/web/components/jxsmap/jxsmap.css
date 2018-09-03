@@ -1,0 +1,55 @@
+.jxsmap {
+  height: 282px; }
+  .jxsmap .jxsmap-map-box {
+    width: 660px;
+    height: 100%;
+    overflow: hidden; }
+  .jxsmap .jxsmap-shop-box {
+    width: 510px;
+    height: 100%;
+    overflow: auto; }
+    .jxsmap .jxsmap-shop-box::-webkit-scrollbar {
+      width: 6px;
+      background-color: #F5F5F5; }
+    .jxsmap .jxsmap-shop-box::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: #3595e7; }
+    .jxsmap .jxsmap-shop-box ul {
+      margin-right: 16px; }
+    .jxsmap .jxsmap-shop-box li {
+      padding: 8px 0 8px 28px;
+      overflow: hidden;
+      cursor: pointer;
+      background-color: #fff; }
+    .jxsmap .jxsmap-shop-box .no-data {
+      font-size: 16px;
+      text-align: center; }
+    .jxsmap .jxsmap-shop-box .on {
+      background-color: #eee; }
+    .jxsmap .jxsmap-shop-box .loc-icon {
+      float: left;
+      width: 27px;
+      height: 40px;
+      background-image: url(http://i1.dd-img.com/assets/image/1460688070-4b4a6fb3b3d0b41b-27w-40h.png); }
+      .jxsmap .jxsmap-shop-box .loc-icon span {
+        display: block;
+        margin-top: 4px;
+        text-align: center;
+        color: #d50d0d;
+        font-size: 12px; }
+    .jxsmap .jxsmap-shop-box .jxsmap-shop-info {
+      margin-left: 40px; }
+      .jxsmap .jxsmap-shop-box .jxsmap-shop-info table {
+        width: 420px; }
+      .jxsmap .jxsmap-shop-box .jxsmap-shop-info td {
+        color: #323c44;
+        font-size: 14px;
+        vertical-align: top; }
+      .jxsmap .jxsmap-shop-box .jxsmap-shop-info .l-td {
+        width: 44px; }
+      .jxsmap .jxsmap-shop-box .jxsmap-shop-info .jxsmap-shop-name {
+        font-size: 16px;
+        margin-bottom: 8px;
+        font-weight: bold; }
+      .jxsmap .jxsmap-shop-box .jxsmap-shop-info .price {
+        color: #d50d0d; }

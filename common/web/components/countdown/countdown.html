@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <title>tip</title>
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="/assets/web/css/base.min.css">
+    <script src="/assets/web/js/common.min.js"></script>
+</head>
+
+<body>
+
+    <div class="countdown-holder" data-endtime="1485929889406">
+        <span></span> 天
+        <span></span> 时
+        <span></span> 分
+        <span></span> 秒
+    </div>
+
+    <div class="countdown-holder" data-endtime="1441930072521">
+        <span></span> 天
+        <span></span> 时
+        <span></span> 分
+        <span></span> 秒
+    </div>
+
+    <div class="countdown-holder">
+        <span></span> 天
+        <span></span> 时
+        <span></span> 分
+        <span></span> 秒
+    </div>
+
+    <script>
+        seajs.use(['./countdown'], function(countdown) {
+
+            // 后台未传服务器时间时，使用当前时间
+            var now = new Date().getTime();
+
+            $('.countdown-holder').each(function(index) {
+                var endTime, day, hour, minute, second;
+
+                day = $(this).find('span').eq(0);
+                hour = $(this).find('span').eq(1);
+                minute = $(this).find('span').eq(2);
+                second = $(this).find('span').eq(3);
+                endTime = parseInt($.trim($(this).data('endtime')));
+
+                // 未定义结束时间戳
+                if (!endTime) {
+                    return;
+                }
+                if (endTime > now) {
+                    // 结束时间未到
+                    var cd = new countdown({
+                        elements: {
+                            day: day,
+                            hour: hour,
+                            minute: minute,
+                            second: second
+                        },
+                        now: now,
+                        end: endTime,
+                        millSecond: true,
+                        complete: function() {
+                            console.log('结束');
+                        }
+                    });
+                } else {
+                    // 结束时间已过
+                    $(this).html('结束了');
+                }
+
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

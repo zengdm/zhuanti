@@ -1,0 +1,30 @@
+.search-input-list{
+	position: absolute;
+	width: 628px;
+	left: -3px;
+	top: 39px;
+	border: 1px #e3e3e3 solid;
+	border-top: none;
+	background-color: #fff;
+	z-index: 10;
+}
+.search-input-list li{
+	height: 36px;
+	line-height: 32px;
+	padding: 0 12px;
+	overflow: hidden;
+	cursor: pointer;
+	color: #bebebe;
+	font-size: 12px;
+}
+.search-input-list .search-input-list-left{
+	font-size: 16px;
+	color: #333;
+}
+.search-input-list-left strong{
+	color: #4599E4;
+	font-weight: normal;
+}
+.search-input-list .hover{
+	background-color: #f4f4f4;
+}

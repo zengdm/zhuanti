@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <title>tip</title>
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="/assets/web/css/base.min.css">
+    <script src="/assets/web/js/common.min.js"></script>
+</head>
+
+<body>
+
+    <style>
+        #parent{ 
+            position: relative;
+            width: 534px;
+            height: 36px;
+            border: 3px #3595e6 solid;
+        }
+        #parent input{
+            width: 400px;
+            height: 24px;
+            line-height: 24px;
+            margin: 6px 0 0 15px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: #323c44;
+        }
+        #parent button{
+            position: absolute;
+            width: 110px;
+            height: 42px;
+            line-height: 42px;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            background-color: #3595e6;
+            border: none;
+            outline: none;
+            right: -3px;
+            top: -3px;
+            cursor: pointer;
+        }
+        .search-input-list{
+            width: 430px;
+        }
+    </style>
+
+    <div id="parent">
+        <input type="text" class="JS_search_input">
+        <button class="JS_search_btn">搜索</button>
+    </div>
+
+    <script>
+        seajs.use(['./searchindex'], function(Searchindex) {
+
+            new Searchindex($('#parent'), 'zenghe', 0);
+        });
+        
+    </script>
+
+</body>
+
+</html>

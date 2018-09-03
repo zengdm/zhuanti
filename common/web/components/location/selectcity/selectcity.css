@@ -1,0 +1,118 @@
+.widget-selectcity-mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 90;
+    background: #000;
+    opacity: .6;
+    filter: alpha(opacity = 60);
+}
+.widget-selectcity-box{
+    position: absolute;
+    width: 626px;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+    background-color: #fff;
+    z-index: 100;
+}
+.widget-selectcity-box h2{
+    padding: 10px 0 10px 34px;
+    color: #ccd8e2;
+    font-size: 16px;
+    background-color: #282c30;
+    border-bottom: 2px #0093e7 solid;
+}
+.widget-selectcity-close{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    right: 10px;
+    top: 0;
+    text-align: center;
+    color: #fff !important;
+    font-size: 32px;
+}
+.widget-selectcity-content{
+    padding: 25px 30px 30px 50px;
+    border: 1px #d5d5d5 solid;
+    border-top: none;
+}
+.widget-selectcity-hotcities dt{
+    float: left;
+    font-size: 16px;
+    color: #323c44;
+    font-weight: bold;
+}
+.widget-selectcity-hotcities dd{
+    margin-top: 1px;
+    float: left;
+    color: #8f8f8f;
+    font-size: 14px;
+}
+.widget-selectcity-hotcities a{
+    color: #323c44;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+.widget-selectcity-hotcities a:hover{
+    color: #3595e7;
+}
+.widget-selectcity-listbox{
+    height: 280px;
+    margin-top: 15px;
+    overflow: auto;
+}
+.widget-selectcity-listbox::-webkit-scrollbar{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.widget-selectcity-listbox::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background-color: #3595e7;
+}
+.widget-selectcity-list{
+    margin-bottom: 18px;
+}
+.widget-selectcity-item{
+    margin-bottom: 10px;
+}
+.widget-selectcity-item i{
+    float: left;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: #3595e7;
+    font-style: normal;
+}
+.widget-selectcity-itemright{
+    margin-left: 38px;
+}
+.widget-selectcity-itemright dt{
+    color: #7d7d7d;
+    font-size: 16px;
+    float: left;
+}
+.widget-selectcity-itemright dd{
+    font-size: 14px;
+    margin-left: 48px;
+    overflow: hidden;
+}
+.widget-selectcity-itemright a{
+    color: #8f8f8f;
+    font-size: 14px;
+    float: left;
+    margin: 1px 15px 10px 0;
+}
+.widget-selectcity-itemright a:hover{
+    color: #3595e7;
+}

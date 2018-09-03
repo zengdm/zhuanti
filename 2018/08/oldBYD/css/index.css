@@ -1,0 +1,127 @@
+.header{
+    margin-bottom: 0;
+}
+.pic-a{
+    width: 16rem;
+    height: 19.27rem;
+    background: url('//zhuanti.diandong.com/zt/2018/08/BYD/img/pic_a.jpg') no-repeat center;
+    background-size: cover;
+}
+.pic-b{
+    width: 16rem;
+    height: 15.3rem;
+    background: url('//zhuanti.diandong.com/zt/2018/08/BYD/img/pic_b.jpg') no-repeat center;
+    background-size: cover;
+}
+.pic-c{
+    width: 16rem;
+    height: 16.75rem;
+    background: url('//zhuanti.diandong.com/zt/2018/08/BYD/img/pic_c.png') no-repeat center;
+    background-size: cover;
+}
+
+.pic-d{
+    width: 16rem;
+    height: 19.12rem;
+    background: url('//zhuanti.diandong.com/zt/2018/08/BYD/img/pic_d.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.pic-e{
+    width: 16rem;
+    height: 19.74rem;
+    background: url('//zhuanti.diandong.com/zt/2018/08/BYD/img/pic_e.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.pic-f{
+    width: 16rem;
+    height: 18.58rem;
+    background: url('//zhuanti.diandong.com/zt/2018/08/BYD/img/pic_f.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.pic-d a,.pic-f a,.pic-e a{
+   width: 4.35rem;
+   height: 1.8rem;
+   display: inline-block;
+   /*background: red; */
+   position: absolute;
+   top: 5.12rem;
+   left: 50%;
+   margin-left: -2.2rem;
+}
+
+.card-form{
+}
+
+.card-form-sel{
+    width: 13.83rem;
+    text-align: left;
+    margin: 0 auto;
+}
+.card-form-sel p{
+    font-size: 0.6rem;
+    color: #0b0e2f;
+    padding-left:0.43rem;
+    line-height: 1.88rem;
+}
+.card-form-sel select{
+    height: 1.88rem;
+    font-size: 0.68rem;
+    outline: none;
+    border: none;
+    padding-left: 0.34rem;
+    color: #333;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #cdcdcd;  
+}
+.card-form-sel .card-form-sel-city{
+    width: 4.2rem;
+    border-right: none;
+}
+.card-form-sel .card-form-sel-dealer{
+    width: 9.6rem;
+}
+
+.form-item{
+    width: 13.83rem;
+    height: 1.88rem;
+    background: #fff;
+    margin:0.6rem auto 0;
+    overflow: hidden;
+    text-align: left;
+    font-size: 0;
+}
+.form-item-input,.card-form-sel-car{
+    width: 13.83rem;
+    height: 1.88rem;
+    background: #fff;
+    border: none;           
+    font-size: 0.68rem;
+    box-sizing:border-box;
+    outline: none;
+    border: 1px solid #cdcdcd;  
+    padding-left: 0.34rem; 
+}
+
+
+.card-form-sel-button{
+    width: 13.83rem;
+    height: 1.88rem;
+    text-align: center;
+    line-height:1.88rem;
+    background: #3399ff url('//zhuanti.diandong.com/zt/2018/08/BYD/img/bg.jpg') no-repeat bottom right;
+    background-size:0.45rem; 
+    color: #fff;
+    font-size: 0.68rem; 
+    font-weight: 600;
+    cursor: pointer;
+    margin:1.32rem auto;
+}
+
+
+

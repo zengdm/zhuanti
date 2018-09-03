@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <title>预订</title>
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="/assets/web/css/base.min.css">
+    <script src="/assets/web/js/common.min.js"></script>
+</head>
+
+<body>
+
+    <style>
+        .btn {
+            position: relative;
+            display: block;
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 20px;
+            color: #333;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #eee;
+            background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+            background-image: linear-gradient(#fcfcfc, #eee);
+            border: 1px solid #d5d5d5;
+            border-radius: 3px;
+        }
+
+        .btn:hover {
+            text-decoration: none;
+            background-color: #ddd;
+            background-image: -webkit-linear-gradient(#eee, #ddd);
+            background-image: linear-gradient(#eee, #ddd);
+            border-color: #ccc;
+            color: #333;
+        }
+
+        .example-btns {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 9999;
+        }
+
+        .example-btns li {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .example-btns .btn {
+            text-align: center;
+            height: 20px;
+        }
+    </style>
+
+    <aside class="example-btns">
+        <ul>
+            <li><a href="javascript:;" class="btn J_preorder" data-cid="123" data-imgurl="http://i2.dd-img.com/data/photo/7a/3d/17760/1458900600.png@200w_1e_1c_0o_0l.src" data-carname="比亚迪 秦 2016款EV300尊贵型" data-model="486" data-colors="111,eee" data-colorname="冰海蓝">show</a></li>
+        </ul>
+    </aside>
+
+    <script>
+        seajs.use(['./preorder'], function(preorder) {
+
+            $('.J_preorder').on('click', function() {
+                var imgUrl = $(this).data('imgurl');
+                var carName = $(this).data('carname');
+                var model = $(this).data('model');
+                var colors = $(this).data('colors');
+                var cid = $(this).data('cid');
+                var colorName = $(this).data('colorname');
+
+                preorder.show({
+                    imgUrl: imgUrl,
+                    carName: carName,
+                    model: model,
+                    cid: cid,
+                    colors: colors,
+                    colorName: colorName
+                });
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

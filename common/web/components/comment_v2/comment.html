@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>评论</title>
+	<link rel="stylesheet" href="http://assets.diandong.com/web/css/base.min.css">
+</head>
+<body>
+	 <div class="comment" id="comment">
+        <div class="comment-form">
+       		<div class="comment-form-cover fn-hide">
+        		<a href="http://passport.diandong.com/ark/login/?redirect=${redirect}">
+        			<p>要登录才能评论呦！现在<span>登录</span></p>
+       			</a>
+        	</div>
+       		 <div class="comment-form-content">
+       			 <h1 class="comment-form-totalNum">网友评论 <span>(345)</span></h1>
+		        <form action="" class="comment-form-box fn-hide">
+			       	 <div class="comment-form-textarea">
+			        	<textarea placeholder="说点什么..." name="name" class="comment-content-textarea"></textarea>
+			 		 </div>
+			  		 <div class="comment-form-footer">
+			       		<a href="javascript:;" class="comment-submit-btn j-submit-comment fn-right">评论</a>
+			         </div>
+		        </form>
+		    </div>
+		</div>
+		<div class="comment-list">
+		    <!-- <div class="comment-list-content">
+		    	<div class="comment-item">
+		    		<header class="comment-item-header clearfix">
+		    			<div class="comment-user fn-left clearfix">
+			       			<div class="comment-user-avatar fn-left">
+			       				<img src="images/user-img.jpg" alt="">
+			       			</div>
+			       			<div class="comment-user-info fn-left">
+			       				<div class="comment-item-user">fyl010326465465</div>
+			       				<div class="comment-item-time">2018-04-28</div>
+			       			</div>
+			       		</div> 
+		    			<a href="javascript:;" class="comment-reply-btn j-reply-comment fn-right">回复</a>
+		    			<a href="javascript:;" class="comment-like-btn j-like-comment fn-right">
+		    				<i class="icon">&#xe649;</i>
+		    				<span></span>
+		    			</a>
+		    		</header>
+		    		<div class="comment-item-content">
+		    			<p class="comment-item-con">今天天气真好</p>
+	    				<div class="comment-reply-list">
+	    					<p class="comment-quote"><span class="reply-list-name">回复人名字</span>: 回复人回复内容 <span class="reply-list-btn comment-reply-btn">回复</span></p>
+	    					<div class="reply-list-more fn-hide">查看全部回复></div>
+	    				</div>
+	    				<form action="" class="clearfix reply-form fn-hide">
+	    					<textarea name="reply-textarea" placeholder="发表回复内容..." class="comment-reply-textarea fn-left"></textarea>
+	    					<span class="fn-left reply-submit">发表</span>
+	    				</form>
+		    		</div>
+		    	</div>
+		    </div> -->
+		    <div class="comment-more">
+		    	<a href="javascript:;"  class="comment-more-btn">查看更多评论</a>
+		    	<a class="comment-more-icon fn-right">写评论</a>
+		    </div>
+		</div>
+	</div>
+	 <script type="text/javascript" src="http://assets.diandong.com/web/js/util/jquery/2.1.4/jquery.js"></script>
+	<script src="http://assets.diandong.com/web/js/common.min.js"></script>
+	<script>
+        seajs.use(['components/comment_v2/comment'], function(Comment) {
+         var comment = new Comment();
+           comment.init();
+            
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+.post-item {
+    border-bottom: 1px solid #dcdcdc;
+}
+.post-item:last-child {
+    border-bottom-width: 0;
+}
+.post-item-title {
+    padding: 10px 0;
+    line-height: 24px;
+    font-size: 18px;
+}
+.post-item-title a {
+    color: #323c44;
+}
+.post-item-title a:hover {
+    text-decoration: underline;
+}
+.post-item-images {
+    height: 100px;
+    font-size: 0;
+    overflow: hidden;
+}
+.post-item-images a {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin-right: 12px;
+}
+.post-item-images img {
+    width: 100%;
+    min-height: 100px;
+}
+.post-item-detail {
+    height: 30px;
+    padding: 13px 0;
+    line-height: 30px;
+    font-size: 12px;
+}
+.post-item-avatar {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.post-item-avatar img {
+    width: 30px;
+    height: 30px;
+}
+.post-item-user {
+    margin-right: 30px;
+}
+.post-item-user a {
+    color: #8f8f8f;
+}
+.post-item-user a:hover {
+    color: #3595e7;
+}
+.post-item-time {
+    color: #b9b9b9;
+}
+.post-item-data {
+    font-size: 12px;
+    color: #8f8f8f;
+}
+.post-item-data i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(http://i1.dd-img.com/assets/image/1459493791-7b9b184c57979f08-24w-72h.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.post-data-follow i {
+    background-position: 0 -2px;
+}
+.post-data-comment i {
+    background-position: 0 -24px;
+}
+.post-data-like i {
+    background-position: 0 -50px;
+}
+.post-item-data a {
+    margin-right: 15px;
+    line-height: 24px;
+    padding: 3px 0;
+    display: inline-block;
+    color: #323c44;
+}
+.post-item-text {
+    margin-top: 6px;
+    line-height: 24px;
+    color: #8f8f8f;
+    font-size: 14px;
+}
+.post-list-more {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    background-color: #eee;
+    color: #3595e7;
+    text-align: center;
+    font-size: 16px;
+}
+.post-item-good .post-item-title a {
+    color: #3595e7;
+}
+.post-item-pay .post-item-title a {
+    color: #ae8f43;
+}
+.post-item-top .post-item-title a {
+    color: #d50d0d;
+}
+.post-ico {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url(http://i1.dd-img.com/assets/image/1452593457-69269cb1e8722706-28w-83h.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 0 3px;
+}
+.post-ico-good {
+    background-position: 0 -28px;
+}
+.post-ico-top {
+    background-position: 0 0;
+}
+.post-ico-pay {
+    background-position: 0 -56px;
+}

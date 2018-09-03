@@ -1,0 +1,1 @@
+define(function(require,t,i){"use strict";var e,n;e=require("cookie"),n={id:"",name:"",init:function(t){this.getCityId(),this.getCityName(),t&&t()},getCityId:function(){e.get("cityId")&&(this.id=e.get("cityId"))},getCityName:function(){e.get("cityName")&&(this.name=e.get("cityName"))}},i.exports=n});

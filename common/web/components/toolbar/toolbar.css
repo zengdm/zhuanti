@@ -1,0 +1,317 @@
+.dd-global-toolbar {
+    width: 35px;
+    height: 100%;
+    position: fixed;
+    background-color: #323c44;
+    top: 0;
+    right: -35px;
+    transition: right 300ms;
+    -webkit-transition: right 300ms;
+    z-index: 100;
+}
+
+.dd-global-toolbar.show {
+    right: 0;
+}
+
+.toolbar-footer {
+    width: 35px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #323c44;
+}
+
+.toolbar-btn-holder {
+    width: 19px;
+    margin: 0 auto;
+    position: relative;
+    padding: 8px 0 7px;
+    border-bottom: 1px solid #606e79;
+}
+
+.toolbar-main .toolbar-btn-holder:first-child {
+    border-top: 1px solid #606e79;
+}
+
+.toolbar-footer .toolbar-btn-holder:last-child {
+    border-bottom-width: 0;
+}
+
+.toolbar-btn {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: block;
+    color: #e4eff9;
+    margin-left: -8px;
+    position: relative;
+}
+
+.toolbar-btn:hover {
+    background-color: #3595e7;
+    color: white;
+}
+
+.toolbar-main {
+    width: 35px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -220px;
+    /*height: 168px;*/
+}
+
+.toolbar-btn-ico {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.toolbar-btn-ico i {
+    font-size: 20px;
+}
+
+.return-top-btn .toolbar-btn-ico {
+    line-height: 20px;
+}
+
+.return-top-btn .toolbar-btn-ico i {
+    display: block;
+    width: 35px;
+    height: 17px;
+    font-size: 16px;
+}
+
+.return-top-btn .toolbar-btn-ico em {
+    display: block;
+    width: 35px;
+    height: 18px;
+    font-size: 10px;
+}
+
+.contact-qq-btn .toolbar-btn-ico i {
+    font-size: 22px;
+}
+
+.contact-hotline-btn .toolbar-btn-ico i {
+    font-size: 22px;
+}
+
+.contact-hotline-btn .toolbar-btn-tip {
+    cursor: default;
+}
+
+.toolbar-btn-tip {
+    height: 35px;
+    line-height: 35px;
+    color: white;
+    background-color: #5c6b77;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    width: auto;
+    padding: 0 16px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.toolbar-tip-arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #5c6b77;
+    text-align: center;
+    right: -13px;
+    bottom: 10px;
+    font-size: 10px;
+}
+
+.code-btn .toolbar-btn-tip {
+    width: 142px;
+    padding: 14px 14px 0;
+    height: 182px;
+}
+
+.toolbar-code {
+    width: 142px;
+    height: 142px;
+    display: block;
+    background-image: url(http://assets.diandong.com/web/images/common/toolbar_code.jpg);
+    background-repeat: no-repeat;
+}
+
+.code-btn .toolbar-btn-tip em {
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.toolbar-order-btn, .toolbar-tel-btn {
+    height: 120px;
+    position: absolute;
+    margin-left: 0;
+    top: 0;
+    left: -35px;
+    background-color: #323c44;
+    transition: left 300ms;
+    -webkit-transition: left 300ms;
+}
+
+.toolbar-tel-btn {
+    left: 0;
+    background-color: #d50d0d;
+}
+
+.toolbar-tel-btn:hover {
+    background-color: #bb1010;
+}
+
+.toolbar-tel-btn.open {
+    background-color: #bb1010;
+    color: white;
+}
+
+.show .toolbar-order-btn, .show .toolbar-tel-btn {
+    left: 0;
+}
+
+.show .return-top-btn {
+    left: 0;
+}
+
+.toolbar-main .toolbar-side-btn {
+    position: relative;
+    height: 120px;
+    width: 35px;
+    margin-left: -8px;
+}
+
+.toolbar-footer .toolbar-side-btn {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    margin-left: -8px;
+}
+
+.return-top-btn {
+    height: 35px;
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: -35px;
+    background-color: #323c44;
+    transition: left 300ms;
+    -webkit-transition: left 300ms;
+}
+
+.toolbar-order-btn .toolbar-btn-ico i, .toolbar-tel-btn .toolbar-btn-ico i {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.toolbar-order-btn .toolbar-btn-ico em, .toolbar-tel-btn .toolbar-btn-ico em {
+    display: block;
+    width: 17px;
+    padding: 5px 9px;
+    height: 70px;
+    line-height: 16px;
+    font-size: 14px;
+    word-break: break-all;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.tel-box {
+    width: 332px;
+    height: 126px;
+    position: absolute;
+    top: -20px;
+    right: 65px;
+    background-color: #eee;
+    border-radius: 3px;
+    padding-top: 40px;
+}
+
+.tel-box-phone {
+    display: block;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #d3d3d3;
+    margin: 0 auto;
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+.tel-box-submit {
+    display: block;
+    width: 150px;
+    height: 42px;
+    border-radius: 3px;
+    background-color: #3595e7;
+    text-align: center;
+    line-height: 42px;
+    color: white;
+    font-size: 20px;
+    margin: 24px auto 0;
+}
+
+.tel-box-submit:hover {
+    background-color: #197acc;
+    color: white;
+}
+
+.tel-box-corner {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: 13px solid #eee;
+    top: 40px;
+    right: -26px;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+
+.tel-box-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: #666;
+    top: 5px;
+    right: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.tel-box-close i {
+    font-size: 20px;
+}
+
+.tel-box-close:hover {
+    color: #3595e7;
+}
+
+.contact-hotline-btn .toolbar-btn-tip {
+    width: 142px;
+    height: 142px;
+    padding: 14px;
+}
+
+.sidebar-hotline-image {
+    width: 142px;
+    height: 142px;
+    display: block;
+    background-image: url(http://i1.dd-img.com/assets/image/1499415554-5e126fcab4a82a9a-142w-142h.jpg);
+    background-repeat: no-repeat;
+}

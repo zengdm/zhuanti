@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <title>预订</title>
+    <meta charset="utf-8">
+    <meta name="applicable-device" content="pc">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="/assets/web/css/base.min.css">
+    <script src="/assets/web/js/common.min.js"></script>
+</head>
+
+<body>
+
+    <style>
+        .btn {
+            position: relative;
+            display: block;
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 20px;
+            color: #333;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #eee;
+            background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+            background-image: linear-gradient(#fcfcfc, #eee);
+            border: 1px solid #d5d5d5;
+            border-radius: 3px;
+        }
+
+        .btn:hover {
+            text-decoration: none;
+            background-color: #ddd;
+            background-image: -webkit-linear-gradient(#eee, #ddd);
+            background-image: linear-gradient(#eee, #ddd);
+            border-color: #ccc;
+            color: #333;
+        }
+
+        .example-btns {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 9999;
+        }
+
+        .example-btns li {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .example-btns .btn {
+            text-align: center;
+            height: 20px;
+        }
+    </style>
+
+    <aside class="example-btns">
+        <ul>
+            <li><a href="javascript:;" class="btn J_signup">show</a></li>
+        </ul>
+    </aside>
+
+    <script>
+        seajs.use(['./signup'], function(signup) {
+
+            $('.J_signup').on('click', function() {
+                var brand = '31';
+                var series = '279';
+                var model = '246';
+
+                signup.show(brand, series, model);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

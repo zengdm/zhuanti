@@ -1,0 +1,300 @@
+.dd-global-nav {
+    width: 100%;
+    min-width: 1200px;
+    background-color: #282c30;
+}
+.dd-global-nav .wrap {
+    height: 42px;
+}
+.sort-menu {
+    width: 228px;
+    float: left;
+    position: relative;
+}
+.sort-menu-btn {
+    width: 228px;
+    height: 42px;
+    display: block;
+    background-color: #3595e6;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.sort-menu-btn span {
+    font-size: 18px;
+    margin-right: 8px;
+    display: inline-block;
+    float: left;
+    padding-left: 15px;
+}
+.sort-menu-btn:hover, .on .sort-menu-btn {
+    background-color: #197acc
+}
+.sort-menu-btn:hover span, .on .sort-menu-btn span {
+    color: white;
+}
+.sort-menu-btn i {
+    width: 20px;
+    height: 20px;
+    color: white;
+    line-height: 20px;
+    font-size: 18px;
+    border-radius: 50%;
+    float: right;
+    margin: 11px 15px 0 0;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    display: none;
+}
+.sort-menu-btn:hover i, .on .sort-menu-btn i {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.global-menu {
+    width: 972px;
+    float: left;
+    height: 42px;
+    font-size: 0;
+}
+.global-menu a {
+    width: 108px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 42px;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.2s;
+}
+.global-menu a:hover, .global-menu a.current {
+    background-color: #4aaafb;
+}
+.hot-tag {
+    width: 25px;
+    height: 18px;
+    position: absolute;
+    right: 5px;
+    top: -3px;
+    background-image: url(http://assets.diandong.com/web/images/common/hot_tag.png);
+    background-repeat: no-repeat;
+}
+.focus-menu {
+    width: 228px;
+    height: 392px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    z-index: 50;
+}
+.focus-menu .focus-menu-type {
+    padding: 5px 0 15px;
+    height: 110px;
+    width: 200px;
+    overflow: hidden;
+    border-bottom: 1px solid #e3e3e3;
+    margin: 0 auto;
+    position: relative;
+}
+.focus-menu-brand {
+    transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+}
+.focus-menu-brand.on {
+    background-color: white;
+}
+.focus-menu-brand.on .focus-menu-type {
+    padding: 5px 14px 15px;
+    border-right: 1px solid white;
+    z-index: 10;
+}
+.focus-menu-type dt {
+    line-height: 40px;
+    color: #282c30;
+    font-size: 18px;
+}
+.focus-menu-type dd {
+    line-height: 25px;
+}
+.focus-menu-type dd a {
+    float: left;
+    color: #96989a;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.focus-menu-type dd a:hover {
+    color: #3595e6;
+}
+.focus-menu .focus-menu-range .focus-menu-type {
+    border-bottom-width: 0;
+}
+.focus-brand-panel {
+    position: absolute;
+    top: 0;
+    left: 228px;
+    z-index: 5;
+    height: 392px;
+    font-size: 0;
+    width: 850px;
+}
+.focus-store-content {
+    padding-top: 5px;
+}
+.focus-store-content li {
+    float: left;
+    width: 58px;
+    height: 58px;
+    padding: 11px 22px;
+}
+.focus-store-content li a {
+    display: block;
+    width: 56px;
+    height: 56px;
+    border: 1px solid white;
+}
+.focus-store-content li a:hover {
+    border-color: #3595e7;
+}
+.focus-store-content li img {
+    width: 56px;
+    height: 56px;
+}
+.focus-brand-list {
+    width: 570px;
+    height: 380px;
+    border-right: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 11px 24px 0;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background-color: white;
+}
+.focus-store-list {
+    border-bottom: 1px solid #e2e2e2;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    width: 204px;
+    height: 371px;
+    padding: 20px 12px 0 13px;
+    border-right: 1px solid #e2e2e2;
+}
+.focus-store-header {
+    height: 40px;
+    font-size: 0;
+    line-height: 40px;
+}
+.focus-store-header i {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #404040;
+    font-size: 20px;
+}
+.focus-store-header h4 {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    color: #33363a;
+}
+.brand-list-item {
+    padding-top: 15px;
+}
+.brand-list-item dt {
+    height: 25px;
+    line-height: 25px;
+    color: #3595e7;
+    font-size: 18px;
+}
+.brand-list-item dd {
+    font-size: 14px;
+    line-height: 36px;
+    float: left;
+    margin-right: 20px;
+}
+.brand-list-item dd a {
+    color: #707274;
+}
+.brand-list-item dd a:hover {
+    color: #3595e7;
+}
+.focus-brand-more {
+    position: absolute;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #3595e7;
+    right: 18px;
+    bottom: 18px;
+}
+.focus-brand-more:hover {
+    color: #197acc;
+}
+.mini-nav {
+    width: 100%;
+    min-width: 1200px;
+    position: fixed;
+    top: -55px;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 49px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: top 0.3s;
+    -webkit-transition: top 0.3s;
+}
+.mini-nav.on {
+    top: 0;
+}
+.mini-nav-logo {
+    width: 124px;
+    height: 49px;
+}
+.mini-nav-logo a {
+    width: 124px;
+    height: 0;
+    display: block;
+    padding-top: 49px;
+    overflow: hidden;
+    background-image: url(/assets/web/images/common/mini_nav_logo.png);
+    background-repeat: no-repeat;
+}
+.mini-nav-list {
+    width: 972px;
+    height: 49px;
+    font-size: 0;
+}
+.mini-nav-list a {
+    display: inline-block;
+    height: 49px;
+    width: 108px;
+    font-size: 18px;
+    color: #484b4e;
+    text-align: center;
+    position: relative;
+}
+.mini-nav-list a:hover {
+    color: #3595e7;
+}
+.mini-nav-list a span {
+    display: inline-block;
+    height: 46px;
+    line-height: 49px;
+    border-bottom: 3px solid white;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    overflow: hidden;
+}
+.mini-nav-list a.current span {
+    border-bottom: 3px solid #3595e7;
+    color: #3595e7;
+}
+.mini-nav-list .hot-tag {
+    top: 2px;
+    right: 6px;
+}

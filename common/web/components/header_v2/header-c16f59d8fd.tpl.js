@@ -1,0 +1,1 @@
+define(function(require,e,i){"use strict";e.suggest=["{@each list as item,index}",'<a target="_blank" href="http://car.diandong.com/chexi/index/',"${item.cxid}",'">',"${item.name}","</a>","{@/each}"].join("")});

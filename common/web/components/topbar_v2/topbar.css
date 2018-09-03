@@ -1,0 +1,65 @@
+.global-topbar {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.global-topbar .wrap {
+    height: 32px;
+}
+
+.topbar-link {
+    font-size: 0;
+}
+
+.topbar-link-item {
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 20px;
+    vertical-align: top;
+}
+
+.topbar-link i {
+    display: inline-block;
+    font-style: normal;
+    font-size: 14px;
+    color: #eee;
+    vertical-align: top;
+}
+
+.topbar-link a {
+    color: #a8b3bb;
+}
+
+.topbar-link a:hover {
+    color: #3595e7;
+}
+
+.topbar-link-hotline {
+    color: #b9b9b9;
+}
+
+.topbar-link-hotline span {
+    color: #3595e7;
+}
+
+.topbar-link-login a {
+    color: #3595e7;
+}
+
+.current-city {
+    color: #b9b9b9;
+    margin-right: 10px;
+}
+
+.change-city-btn {
+    color: #3595e7;
+}
+
+.topbar-link-app a {
+    color: #3595e7;
+}
+
+.topbar-link-app a:hover {
+    color: #197acc;
+}
